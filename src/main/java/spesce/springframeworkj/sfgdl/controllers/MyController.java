@@ -1,6 +1,7 @@
 package spesce.springframeworkj.sfgdl.controllers;
 
 import org.springframework.stereotype.Controller;
+import spesce.springframeworkj.sfgdl.services.GreetingService;
 
 /**
  * Created By Steve P. on 11/18/2020
@@ -9,9 +10,14 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class MyController {
-    public String sayHello(){
-        System.out.println("Hello World!");
 
-        return "Hello There!";
+    private final GreetingService greetingService;
+
+    public MyController(GreetingService greetingService) {
+        this.greetingService = greetingService;
+    }
+
+    public String sayHello(){
+        return greetingService.sayGreeting();
     }
 }
