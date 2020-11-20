@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  * original package: spesce.springframeworkj.sfgdl.services
  * ------------------------------------------------------------------------------------------
  */
-@Profile("ES")
+@Profile({"ES", "default"})
 @Service("i18nService")
 public class I18nGreetingServiceSpanish implements GreetingService{
 
