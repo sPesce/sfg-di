@@ -3,10 +3,7 @@ package spesce.springframeworkj.sfgdl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import spesce.springframeworkj.sfgdl.controllers.ConstructorInjectedController;
-import spesce.springframeworkj.sfgdl.controllers.MyController;
-import spesce.springframeworkj.sfgdl.controllers.PropertyInjectedController;
-import spesce.springframeworkj.sfgdl.controllers.SetterInjectedController;
+import spesce.springframeworkj.sfgdl.controllers.*;
 
 @SpringBootApplication
 public class SfgDlApplication {
@@ -14,9 +11,12 @@ public class SfgDlApplication {
  	public static void main(String[] args) {
 		ApplicationContext ctx =  SpringApplication.run(SfgDlApplication.class, args);
 
-		MyController myController = (MyController) ctx.getBean("myController");
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+		System.out.println("------------------------------ Active Profile");
+		System.out.println(i18nController.sayHello());
 
 		System.out.println("------------------------------ Primary Bean");
+		MyController myController = (MyController) ctx.getBean("myController");
 		System.out.println(myController.sayHello());
 
 		System.out.println("------------------------------ Property");
