@@ -8,7 +8,7 @@ import spesce.springframeworkj.sfgdl.controllers.MyController;
 @SpringBootApplication
 public class SfgDlApplication {
 
-	public static void main(String[] args) {
+ 	public static void main(String[] args) {
 		ApplicationContext ctx =  SpringApplication.run(SfgDlApplication.class, args);
 
 		MyController myController = (MyController) ctx.getBean("myController");
