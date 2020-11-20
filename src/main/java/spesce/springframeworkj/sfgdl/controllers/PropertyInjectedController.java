@@ -1,5 +1,7 @@
 package spesce.springframeworkj.sfgdl.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import spesce.springframeworkj.sfgdl.services.GreetingService;
 
 /**
@@ -7,8 +9,10 @@ import spesce.springframeworkj.sfgdl.services.GreetingService;
  * original package: spesce.springframeworkj.sfgdl.controllers
  * ------------------------------------------------------------------------------------------
  */
+@Controller
 public class PropertyInjectedController {
 
+    @Autowired
     public GreetingService greetingService;
 
     public String getGreeting(){

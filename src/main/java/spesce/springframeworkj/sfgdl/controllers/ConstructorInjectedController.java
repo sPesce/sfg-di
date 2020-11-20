@@ -1,5 +1,6 @@
 package spesce.springframeworkj.sfgdl.controllers;
 
+import org.springframework.stereotype.Controller;
 import spesce.springframeworkj.sfgdl.services.GreetingService;
 
 /**
@@ -7,10 +8,11 @@ import spesce.springframeworkj.sfgdl.services.GreetingService;
  * original package: spesce.springframeworkj.sfgdl.controllers
  * ------------------------------------------------------------------------------------------
  */
-public class ContructorInjectedController {
+@Controller
+public class ConstructorInjectedController {
     private final GreetingService greetingService;
 
-    public ContructorInjectedController(GreetingService greetingService) {
+    public ConstructorInjectedController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 

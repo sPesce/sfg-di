@@ -4,15 +4,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import spesce.springframeworkj.sfgdl.services.GreetingServiceImpl;
 
-import static org.junit.jupiter.api.Assertions.*;
+class ConstructorInjectedControllerTest {
 
-class ContructorInjectedControllerTest {
-
-    ContructorInjectedController controller;
+    ConstructorInjectedController controller;
 
     @BeforeEach
     void setUp() {
-        controller = new ContructorInjectedController(new GreetingServiceImpl());
+        controller = new ConstructorInjectedController(new GreetingServiceImpl());
     }
 
     @Test
