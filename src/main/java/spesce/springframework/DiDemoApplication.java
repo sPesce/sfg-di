@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"spesce.services","spesce.springframework"})
+@ComponentScan(basePackages = {"spesce.springframework.services","spesce.springframework"})
 public class DiDemoApplication {
 
 	public static void main(String[] args) {

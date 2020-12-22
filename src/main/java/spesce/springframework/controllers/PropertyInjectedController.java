@@ -1,6 +1,6 @@
 package spesce.springframework.controllers;
 
-import spesce.services.GreetingService;
+import spesce.springframework.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
