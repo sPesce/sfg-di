@@ -1,6 +1,6 @@
-package guru.springframework.controllers;
+package spesce.springframework.controllers;
 
-import guru.springframework.services.GreetingService;
+import spesce.springframework.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 /**

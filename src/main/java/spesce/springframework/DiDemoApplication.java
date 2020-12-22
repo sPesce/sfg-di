@@ -1,9 +1,9 @@
-package guru.springframework;
+package spesce.springframework;
 
-import guru.springframework.controllers.ConstructorInjectedController;
-import guru.springframework.controllers.GetterInjectedController;
-import guru.springframework.controllers.MyController;
-import guru.springframework.controllers.PropertyInjectedController;
+import spesce.springframework.controllers.ConstructorInjectedController;
+import spesce.springframework.controllers.GetterInjectedController;
+import spesce.springframework.controllers.MyController;
+import spesce.springframework.controllers.PropertyInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
