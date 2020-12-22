@@ -1,14 +1,14 @@
-package guru.springframework.sfgdi.services;
+package guru.springframework.services;
 
 import org.springframework.stereotype.Service;
 
 /**
- * Created by jt on 12/26/19.
+ * Created by jt on 5/24/17.
  */
 @Service
 public class ConstructorGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello World - Constructor";
+        return "Hello - I was injected via the constructor!!!";
     }
 }
