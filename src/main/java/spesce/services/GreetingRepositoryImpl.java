@@ -1,4 +1,4 @@
-package spesce.springframework.services;
+package spesce.services;
 
 import org.springframework.stereotype.Component;
 

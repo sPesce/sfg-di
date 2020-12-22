@@ -1,5 +1,6 @@
 package spesce.springframework;
 
+import org.springframework.context.annotation.ComponentScan;
 import spesce.springframework.controllers.ConstructorInjectedController;
 import spesce.springframework.controllers.GetterInjectedController;
 import spesce.springframework.controllers.MyController;
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"spesce.services","spesce.springframework"})
 public class DiDemoApplication {
 
 	public static void main(String[] args) {

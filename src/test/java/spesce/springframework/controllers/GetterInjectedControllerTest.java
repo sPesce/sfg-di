@@ -1,6 +1,6 @@
 package spesce.springframework.controllers;
 
-import spesce.springframework.services.GreetingServiceImpl;
+import spesce.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
